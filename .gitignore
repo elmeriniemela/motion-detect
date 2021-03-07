@@ -2,8 +2,9 @@
 __pycache__/
 *.py[cod]
 
-# Video files
+# Media files
 *.avi
+*.png
 
 # C extensions
 *.so
