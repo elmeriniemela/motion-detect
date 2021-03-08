@@ -1,7 +1,7 @@
 
 import cv2 as cv
 from datetime import datetime
-import os
+import os, time
 
 class Camera:
     def __init__(self, video, width, height, storage_dir, display):
@@ -61,6 +61,7 @@ class Camera:
 
         try:
             while cap.isOpened():
+                time.sleep(0.1)
                 ret, frame = cap.read()
                 self.frame_count += 1
                 if not ret:
